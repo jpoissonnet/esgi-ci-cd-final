@@ -25,6 +25,44 @@ pnpm dev
 
 L'application est disponible sur le port 3000 de votre machine
 
+## Continuous Integration
+
+Le CI est fait avec Github Actions, il est déclenché à chaque push sur la branche main et sur chaque PR.
+
+Le workflow est le suivant :
+- Lint
+- Build
+- Test
+
+### Lint
+
+Le linter utilisé est oxlint, on peut le lancer avec `pnpm lint`.
+Le workflow de lint est reproductible en local en faisant:
+```bash
+pnpm install
+pnpm lint
+```
+
+### Build
+
+Le "build" est en fait une transpilation des fichiers typescript en fichiers javascript, on peut le lancer avec `pnpm build`.
+Le workflow de build est reproductible en local en faisant:
+```bash
+pnpm install
+pnpm build
+```
+
+### Test
+
+Les tests sont fait avec vitest, on peut les lancer avec `pnpm test`.
+Le test est bidon, il vérifie qu'une valeur qu'on passe dans l'url se retrouve dans le template.
+
+Le workflow de test est reproductible en local en faisant:
+```bash
+pnpm install
+pnpm test
+```
+
 ## TODO:
  - [x] Présence de tags
  - [ ] [Sur chaque PR] Workflow avec lint, build et test + require green CI to merge a PR

@@ -3,12 +3,16 @@
     "type": "module",
     "scripts": {
         "dev": "tsx watch src/index.ts",
-        "build": "tsc --outDir dist"
+        "build": "tsc --outDir dist",
+        "lint": "oxlint",
+        "test": "vitest"
     },
     "dependencies": {
         "@hono/node-server": "^1.13.7",
         "hono": "^4.6.14",
+        "oxlint": "^0.15.5",
         "prettier": "^3.4.2",
+        "vitest": "^2.1.8",
         "typescript": "^5.7.3"
     },
     "devDependencies": {

@@ -4,14 +4,14 @@
 
 Voici le repo du rendu pour la matière de CI/CD contenant une app minimaliste et des workflows de CI/CD
 ## Groupe
-Notre groupe est consitué de: 
+Notre groupe est constitué de : 
 - Ruddy Morel
 - Jules Poissonnet
 
 # Application dummy
 
 L'application est une bête page web qui à un bouton faisant appel à une API qui mettra X ms à nous répondre.
-En se rendant sur `localhost:3000/0`, l'API répondra instantanément alors que sur l'url `localhost:3000/12000` l'API mettra 12s à repondre.
+En se rendant sur `localhost:3000/0`, l'API répondra instantanément alors que sur l'url `localhost:3000/12000` l'API mettra 12s à répondre.
 
 ## Installation
 
@@ -65,5 +65,5 @@ pnpm test
 
 ## TODO:
  - [x] Présence de tags
- - [ ] [Sur chaque PR] Workflow avec lint, build et test + require green CI to merge a PR
+ - [x] [Sur chaque PR] Workflow avec lint, build et test + require green CI to merge a PR
  - [ ] [Sur main] Workflow de deploiement qui build et pousse l'image docker sur dockerhub avec un tag "latest" ou "<tag">"

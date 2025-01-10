@@ -1,7 +1,7 @@
 {
     "compilerOptions": {
       "target": "ESNext",
-      "module": "NodeNext",
+      "module": "preserve",
       "moduleResolution": "bundler",
       "strict": true,
       "verbatimModuleSyntax": true,

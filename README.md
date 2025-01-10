@@ -26,6 +26,6 @@ pnpm dev
 L'application est disponible sur le port 3000 de votre machine
 
 ## TODO:
- - [ ] Présence de tags
+ - [x] Présence de tags
  - [ ] [Sur chaque PR] Workflow avec lint, build et test + require green CI to merge a PR
  - [ ] [Sur main] Workflow de deploiement qui build et pousse l'image docker sur dockerhub avec un tag "latest" ou "<tag">"

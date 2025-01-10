@@ -2,12 +2,14 @@
     "name": "dummy-slowapi",
     "type": "module",
     "scripts": {
-        "dev": "tsx watch src/index.ts"
+        "dev": "tsx watch src/index.ts",
+        "build": "tsc --outDir dist"
     },
     "dependencies": {
         "@hono/node-server": "^1.13.7",
         "hono": "^4.6.14",
-        "prettier": "^3.4.2"
+        "prettier": "^3.4.2",
+        "typescript": "^5.7.3"
     },
     "devDependencies": {
         "@playwright/test": "^1.49.1",

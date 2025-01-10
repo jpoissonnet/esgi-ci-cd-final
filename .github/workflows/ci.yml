@@ -1,7 +1,9 @@
 name: 🚧 Continuous Integration
 on:
-  - push
-  - pull_request
+  push:
+    branches: [master]
+  pull_request:
+    types: [opened, reopened, synchronize, ready_for_review]
 jobs:
   lint:
     name: 💅 Lint

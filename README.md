@@ -63,7 +63,13 @@ pnpm install
 pnpm test
 ```
 
+## Continuous Deployment
+
+Le CD est fait avec Github Actions, il est déclenché à chaque push sur la branche main et à la création d'un tag.
+
+Le workflow permet de build l'image docker et de la push sur DockerHub avec un tag "latest" ou "<nom du tag>".
+
 ## TODO:
  - [x] Présence de tags
  - [x] [Sur chaque PR] Workflow avec lint, build et test + require green CI to merge a PR
- - [ ] [Sur main] Workflow de deploiement qui build et pousse l'image docker sur dockerhub avec un tag "latest" ou "<tag">"
+ - [x] [Sur main] Workflow de deploiement qui build et pousse l'image docker sur dockerhub avec un tag "latest" ou "<tag>"

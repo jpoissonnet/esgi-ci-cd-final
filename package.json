@@ -4,7 +4,8 @@
     "scripts": {
         "dev": "tsx watch src/index.ts",
         "build": "tsc --outDir dist",
-        "lint": "oxlint"
+        "lint": "oxlint",
+        "test": "vitest"
     },
     "dependencies": {
         "@hono/node-server": "^1.13.7",

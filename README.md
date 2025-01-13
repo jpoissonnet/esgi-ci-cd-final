@@ -67,7 +67,10 @@ pnpm test
 
 Le CD est fait avec Github Actions, il est déclenché à chaque push sur la branche main et à la création d'un tag.
 
-Le workflow permet de build l'image docker et de la push sur DockerHub avec un tag "latest" ou "<nom du tag>".
+Le workflow permet de build l'image docker et de la push sur DockerHub avec un tag "latest" ou "nom du tag".
+
+L'idée est que le workflow tourne sur master, donc à chaque fois qu'on merge une PR et pousse sur le [dockerhub](https://hub.docker.com/repository/docker/jpoissonnet/esgi-ci-cd/tags) avec le tag "latest".
+Si, on pousse un tag sur github, il se déclenche également en poussant sur dockerhub une image avec le tag docker du même nom que le tag github.
 
 ## TODO:
  - [x] Présence de tags
